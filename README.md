@@ -13,3 +13,18 @@ This problem set will cover:
 -  Apply 7 iterations of bilateral filtering
 -  Combine the result cartoon effect with the original image using bitwise_and function
 -  You can get the required image now :)
+
+# Coins Detection Using Hough Transform
+
+This problem set will cover:
+- Images include the following coins only: one Egyptian pound (135 pixels radius), 50 piastres (120 pixels radius) and 25 piastres (107 pixels radius).
+- There are at most 20 coins per image.
+- Each image has at least one coin of each type.
+- For simplicity, all the coins of the same type have the same radius.
+
+#  Steps:
+-  Smoothing the image
+-  Edge Detection
+-  Accumulation into (a, b)-space using circular Hough transform
+-  Refining Coordinates and CHT Post-Processing
+
