@@ -28,3 +28,17 @@ This problem set will cover:
 -  Accumulation into (a, b)-space using circular Hough transform
 -  Refining Coordinates and CHT Post-Processing
 
+# Image Mosaics Using homography matrix H
+
+This problem set will cover:
+- Getting Correspondences.
+- Compute the Homography Parameters.
+- Warping Between Image Planes.
+- Create the output mosaic.
+
+# Stereo Vision Using Dynamic programming
+
+This problem set will cover:
+- Block Matching.
+- Masure of pixel noise σ.
+- Disparity Computation.
