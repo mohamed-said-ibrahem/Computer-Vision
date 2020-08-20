@@ -43,9 +43,9 @@ This problem set will cover:
 - Masure of pixel noise σ.
 - Disparity Computation.
 
-# Tracking Objects in Videos (Lucas-Kanade Tracker : Forward Additive Alignment).
+# Tracking Objects in Videos (Lucas-Kanade Tracker).
 
-## Problem Statement:
+## Problem Statement (Forward Additive Alignment):
 One incredibly important aspect of human and animal vision is the ability to follow objects and people in our view. Whether it is a tiger chasing its prey, or you trying to catch a basketball, tracking is so integral to our everyday lives that we forget how much we rely on it.
 
 You will implement the Lucas-Kanade tracker, where two video sequences are provided: a car on a road, a player in race.
@@ -53,3 +53,6 @@ You will implement the Lucas-Kanade tracker, where two video sequences are provi
 To initialize the tracker you need to define a template by drawing a bounding box around the object to be tracked in the first frame of the video.
 
 For each of the subsequent frames the tracker will update an affine transform that warps the current frame so that the template in the first frame is aligned with the warped current frame.
+
+Write a function that computes the optimal local motion from frame I t to frame I t+1 that minimizes the error L. The function takes three inputs: the current frame I t , the next frame I t+1 , and an (4 x 1) vector that represents a rectangle on the image frame I t . The four components of the rectangle are [x,y,w,h], where (x, y) is the top-left corner and (w, h) is the width and height of the bounding box. The rectangle is inclusive, i.e., in includes all the four corners.
+Start with the first frame provides I 0 , detect the object to be tracked (car/helicopter), and draw the (4 x 1) rectangle over the detected object. Iterate over the rest of the frames and output a tracking video of the object.
