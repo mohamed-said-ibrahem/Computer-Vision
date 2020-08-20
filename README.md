@@ -42,3 +42,14 @@ This problem set will cover:
 - Block Matching.
 - Masure of pixel noise σ.
 - Disparity Computation.
+
+# Tracking Objects in Videos (Lucas-Kanade Tracker : Forward Additive Alignment).
+
+## Problem Statement:
+One incredibly important aspect of human and animal vision is the ability to follow objects and people in our view. Whether it is a tiger chasing its prey, or you trying to catch a basketball, tracking is so integral to our everyday lives that we forget how much we rely on it.
+
+You will implement the Lucas-Kanade tracker, where two video sequences are provided: a car on a road, a player in race.
+
+To initialize the tracker you need to define a template by drawing a bounding box around the object to be tracked in the first frame of the video.
+
+For each of the subsequent frames the tracker will update an affine transform that warps the current frame so that the template in the first frame is aligned with the warped current frame.
